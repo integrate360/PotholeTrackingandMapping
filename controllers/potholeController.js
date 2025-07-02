@@ -198,9 +198,7 @@ export const getAllPotholes = async (req, res) => {
     }
 
     const potholes = await Pothole.find(query)
-      .populate('reportedBy', 'name email')
-      .populate('verifiedBy', 'name')
-      .populate('fixedBy', 'name');
+     
 
     res.json(potholes);
   } catch (error) {
