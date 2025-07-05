@@ -253,3 +253,6 @@ export const deletePothole = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+
+// Validate AWS Credentials on startup
